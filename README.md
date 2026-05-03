@@ -2,6 +2,12 @@
 
 This repository contains a reproducible data preparation and modelling workflow for analysing predictors of COVID-19 protective behaviour compliance before and after sustained mask mandates. The current implementation uses Australia as the initial case study and is designed to support later cross-national extension.
 
+# Statement
+
+This project builds on the methodological framework of Ryan et al. (2025). In particular, several parts of the data preprocessing, policy-period definition, outcome construction, and model-selection strategy follow their approach. This repository adapts that framework for the current research design by organising the workflow into a reproducible pipeline, applying it to the Australian case study, comparing multiple classification models, and preparing the structure for later cross-national extension.
+
+
+
 ## Project aim
 
 This project compared whether the predictive factors influencing public compliance with mask mandates differed across countries and time periods before and after their implementation. The analysis results consisted of two binary variables:
