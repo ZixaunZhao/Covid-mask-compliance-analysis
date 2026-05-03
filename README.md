@@ -4,7 +4,7 @@ This repository contains a reproducible data preparation and modelling workflow 
 
 ## Project aim
 
-The project compares whether the predictors of compliance differ before and after mask mandates. It uses a predictive, not causal, modelling approach. Two binary outcomes are analysed:
+This project compared whether the predictive factors influencing public compliance with mask mandates differed across countries and time periods before and after their implementation. The analysis results consisted of two binary variables:
 
 1. Face mask wearing compliance.
 2. Broader protective behaviour compliance.
