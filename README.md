@@ -33,7 +33,7 @@ Model selection is based mainly on cross-validated ROC AUC, followed by held-out
 │   └── OxCGRT_AUS_latest.csv
 │   
 ├── Code/
-│   ├── 01_Clean Data.ipynb
+│   ├── 01_Data Clean.ipynb
 │   ├── 02_Column Names update.ipynb
 │   ├── 03_split.ipynb
 │   ├── 04_Mode_Logistic Regression.ipynb
@@ -222,9 +222,9 @@ ipython
 
 
 
-## How to reproduce the analysis
+## Reproduce the analysis
 
-1. Place the raw files in the `Data/` folder:
+1. The raw files in the `Data/` folder:
    - `australia.csv`
    - `OxCGRT_AUS_latest.csv`
 
