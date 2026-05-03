@@ -31,6 +31,17 @@ Model selection is based mainly on cross-validated ROC AUC, followed by held-out
 ├── Data/
 │   ├── australia.csv
 │   └── OxCGRT_AUS_latest.csv
+│   
+├── Code/
+│   ├── 01_Clean Data.ipynb
+│   ├── 02_Column Names update.ipynb
+│   ├── 03_split.ipynb
+│   ├── 04_Mode_Logistic Regression.ipynb
+│   ├── 05_Model_Classification Tree.ipynb
+│   ├── 06_Model_Random Forest.ipynb
+│   ├── 07_Model_XGBoost.ipynb
+│   └── ALL.ipynb
+│   
 ├── Cleaned Data/
 │   ├── cleaned_data.csv
 │   ├── cleaned_data_preprocessing.csv
@@ -55,27 +66,20 @@ Model selection is based mainly on cross-validated ROC AUC, followed by held-out
 │       ├── y_train_after_protective.csv
 │       ├── y_test_after_protective.csv
 │       └── split_summary.csv
-├── Result/
-│   ├── table_cv_results.csv
-│   ├── table_cv_results_full.csv
-│   ├── table_test_results.csv
-│   ├── selected_model_summary.csv
-│   ├── auc_pivot.csv
-│   ├── f1_pivot.csv
-│   ├── roc_selected_models.png
-│   ├── roc_all_models_comparison.png
-│   ├── feature_importance_include_state.png
-│   ├── feature_importance_no_state.png
-│   ├── table_feature_importance_include_state.csv
-│   └── table_feature_importance_no_state.csv
-├── 01_Data Clean.ipynb.ipynb
-├── 02_Column Names update.ipynb
-├── 03_split.ipynb
-├── 04_Mode_Logistic Regression.ipynb
-├── 05_Model_Classification Tree.ipynb
-├── 06_Model_Random Forest.ipynb
-├── 07_Model_XGBoost.ipynb
-└── ALL.ipynb
+└─── Result/
+    ├── table_cv_results.csv
+    ├── table_cv_results_full.csv
+    ├── table_test_results.csv
+    ├── selected_model_summary.csv
+    ├── auc_pivot.csv
+    ├── f1_pivot.csv
+    ├── roc_selected_models.png
+    ├── roc_all_models_comparison.png
+    ├── feature_importance_include_state.png
+    ├── feature_importance_no_state.png
+    ├── table_feature_importance_include_state.csv
+    └── table_feature_importance_no_state.csv
+
 ```
 
 ## Notebook workflow
