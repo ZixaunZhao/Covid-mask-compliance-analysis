@@ -183,7 +183,7 @@ ROC AUC is used as the primary model-selection metric.
 
 ## Reproducibility
 
-The random seed is set to the student ID:
+The random seed is set to my student ID:
 
 ```python
 RANDOM_STATE = 1948883
@@ -210,11 +210,7 @@ xgboost
 ipython
 ```
 
-A typical installation command is:
 
-```bash
-pip install numpy pandas matplotlib scikit-learn imbalanced-learn xgboost ipython
-```
 
 ## How to reproduce the analysis
 
@@ -228,7 +224,7 @@ pip install numpy pandas matplotlib scikit-learn imbalanced-learn xgboost ipytho
    - `03_split.ipynb`
    - `ALL.ipynb`
 
-3. Optional: run the separate model notebooks if individual model outputs are required:
+3. Optional: run the separate model notebooks:
    - `04_Mode_Logistic Regression.ipynb`
    - `05_Model_Classification Tree.ipynb`
    - `06_Model_Random Forest.ipynb`
@@ -238,17 +234,11 @@ pip install numpy pandas matplotlib scikit-learn imbalanced-learn xgboost ipytho
 
 ## Main findings from the current Australian analysis
 
-In the current Australian case study:
 
 - XGBoost gives the strongest cross-validated ROC AUC across the four modelling tasks.
 - Predictive performance is higher after sustained mask mandates than before mandates.
-- Face mask wearing is more predictable than broader protective behaviour.
-- State indicators carry substantial predictive information.
-- After excluding state indicators, non-mask protective behaviour, willingness to self-isolate, perceived COVID severity, physical contact count, and survey timing remain important predictors.
+- State indicators carry substantial predictive information, showing that regional policy timing and local public health context played an important role.
+- After excluding state indicators, the main predictors still changed before and after mandates.
+- For face mask wearing, the strongest non-state predictor was non-mask protective behaviour in both periods, but its importance decreased after mandates. Survey timing and willingness to self-isolate became more important after mandates.
+- For broader protective behaviour, the strongest non-state predictor shifted from physical contact count and perceived COVID severity before mandates to willingness to self-isolate after mandates.
 
-## Notes
-
-- This project is predictive rather than causal. Model results should not be interpreted as estimating the causal effect of mask mandates.
-- The Australian analysis is the first stage of a larger planned cross-national comparison.
-- The file `01_Data Clean.ipynb.ipynb` has a duplicated `.ipynb` extension. Renaming it to `01_Data Clean.ipynb` may make the repository cleaner.
-- The file `04_Mode_Logistic Regression.ipynb` appears to contain a typo in the filename. Consider renaming it to `04_Model_Logistic Regression.ipynb`.
