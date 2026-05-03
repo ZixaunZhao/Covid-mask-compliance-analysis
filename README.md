@@ -224,13 +224,13 @@ ipython
    - `australia.csv`
    - `OxCGRT_AUS_latest.csv`
 
-2. Run the notebooks in order:
+2. Run the notebooks:
    - `01_Data Clean.ipynb.ipynb`
    - `02_Column Names update.ipynb`
    - `03_split.ipynb`
    - `ALL.ipynb`
 
-3. Optional: run the separate model notebooks:
+3. 4 models:
    - `04_Mode_Logistic Regression.ipynb`
    - `05_Model_Classification Tree.ipynb`
    - `06_Model_Random Forest.ipynb`
@@ -238,7 +238,7 @@ ipython
 
 4. Check the generated outputs in the `Result/` folder.
 
-## Main findings from the current Australian analysis
+## Key findings
 
 
 - XGBoost gives the strongest cross-validated ROC AUC across the four modelling tasks.
