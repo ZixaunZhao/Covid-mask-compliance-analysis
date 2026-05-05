@@ -4,7 +4,7 @@ This repository contains a reproducible data preparation and modelling workflow 
 
 # Statement
 
-This project builds on the methodological framework of Ryan et al. (2025). In particular, several parts of the data preprocessing, policy-period definition, outcome construction, and model-selection strategy follow their approach. This repository adapts that framework for the current research design by organising the workflow into a reproducible pipeline, applying it to the Australian case study, comparing multiple classification models, and preparing the structure for later cross-national extension.
+This project builds on the methodological framework of Ryan et al. (2025). In particular, several parts of the data preprocessing, policy-period definition, outcome construction, and model-selection strategy follow their approach. 
 
 
 
@@ -84,7 +84,6 @@ Model selection is based mainly on cross-validated ROC AUC, followed by held-out
 
 ## Notebook workflow
 
-Run the notebooks in the following order.
 
 ### 1. `01_Data Clean.ipynb.ipynb`
 
@@ -97,21 +96,11 @@ Processes the raw Australian survey data and OxCGRT policy data. Main tasks incl
 - Standardising dates, state identifiers, and survey variables.
 - Creating the preprocessed analytical dataset.
 
-Main outputs:
-
-- `Cleaned Data/mandate_start_dates.csv`
-- `Cleaned Data/missing_value_counts.csv`
-- `Cleaned Data/cleaned_data.csv`
-- `Cleaned Data/cleaned_data_preprocessing.csv`
 
 ### 2. `02_Column Names update.ipynb`
 
 Renames variables into more readable labels for modelling, reporting, and interpretation.
 
-Main outputs:
-
-- Variable-name mapping file.
-- `Cleaned Data/cleaned_data_preprocessing_renamed.csv`
 
 ### 3. `03_split.ipynb`
 
@@ -124,11 +113,6 @@ Builds four modelling datasets by combining two outcomes with two policy periods
 
 Each task is split into 80% training data and 20% test data using stratification.
 
-Main outputs:
-
-- Train/test predictor files in `Cleaned Data/Splits/`
-- Train/test target files in `Cleaned Data/Splits/`
-- `Cleaned Data/Splits/split_summary.csv`
 
 ### 4. `04_Mode_Logistic Regression.ipynb`
 
@@ -150,14 +134,6 @@ Fits XGBoost models. Hyperparameters are selected using randomized search with s
 
 Runs the integrated modelling and result-generation workflow. This is the main notebook for reproducing the reported tables and figures.
 
-Main outputs include:
-
-- Cross-validation comparison table
-- Selected held-out test performance table
-- ROC curves for selected XGBoost models
-- ROC curves comparing all four algorithms
-- Feature-importance figures with and without state indicators
-- Feature-importance summary tables
 
 ## Data sources
 
@@ -205,20 +181,6 @@ The workflow uses:
 - Stratified 5-fold cross-validation
 - Training-only oversampling
 - Held-out test evaluation
-
-## Required Python packages
-
-The notebooks require the following main packages:
-
-```text
-numpy
-pandas
-matplotlib
-scikit-learn
-imbalanced-learn
-xgboost
-ipython
-```
 
 
 
